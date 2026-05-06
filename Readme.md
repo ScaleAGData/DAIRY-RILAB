@@ -20,7 +20,7 @@ The ECMWF IFS Data Processor is designed to be used within the DAIRY RILAB's dat
 
 1. Clone the repository and navigate to the project directory.
 2. Run the `setup.sh` script to create a virtual environment and install the required dependencies.
-3. Run the `main.py` script to execute the data processing pipeline.
+3. Run the `main.py` script to execute the data processing pipeline.(Used python Python 3.12.3)
 
 ### Configuration
 
@@ -30,3 +30,7 @@ The ECMWF IFS Data Processor is designed to be used within the DAIRY RILAB's dat
 ### Known Issues
 
 - Data access via herbie-data can be interrupted by network issues or API limitations in times where providers upload new data (e.g. 08:00-09:00 UTC). Some basic retry logic is implemented, but it can still lead to failed runs. In this case, simply re-run the `main.py` script. If used in a operational context some retry logic should be implemented in the calling code.
+
+```
+
+```
