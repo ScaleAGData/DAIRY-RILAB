@@ -20,7 +20,7 @@ The ECMWF IFS Data Processor is designed to be used within the DAIRY RILAB's dat
 
 1. Clone the repository and navigate to the project directory.
 2. Run the `setup.sh` script to create a virtual environment and install the required dependencies.
-3. Run the `main.py` script to execute the data processing pipeline.(Used python Python 3.12.3)
+3. Run the `main.py` script to execute the data processing pipeline. (Use Python 3.12.3)
 
 ### Configuration
 
