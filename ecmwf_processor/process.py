@@ -341,7 +341,7 @@ def get_herbie(
             herbie = Herbie(
                 date=naive_datetime,
                 model=c.ifs,
-                priority=c.aws,
+                priority=SETTINGS.HERBIE_PRIORITY,
                 product=c.oper,
                 fxx=step,
                 verbose=False,

@@ -2,13 +2,12 @@ from pathlib import Path
 
 from ecmwf_processor.processor_register import register_aoi
 from ecmwf_processor.process import process
-from ecmwf_processor.config import SETTINGS
 
 if __name__ == "__main__":
 
     bbox = [8.25, 53, 10, 54]
-    start_datetime = "2025-11-13T00:00:00Z"
-    end_datetime = "2025-11-13T00:00:01Z"
+    start_datetime = "2026-05-05T00:00:00Z"
+    end_datetime = "2026-05-05T00:00:01Z"
     cube, cube_store = register_aoi(bbox=bbox)
 
     from tempfile import TemporaryDirectory

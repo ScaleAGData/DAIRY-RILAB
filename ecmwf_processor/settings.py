@@ -1,8 +1,12 @@
 from pydantic_settings import BaseSettings
 from pathlib import Path
+from typing import Literal
+
+from ecmwf_processor import constants as c
 
 
 class Settings(BaseSettings):
+    HERBIE_PRIORITY: Literal["ecmwf", "aws", "azure", "google"] = c.aws
     HERBIE_MAX_RETRIES: int = 1
     DATA_PATH: Path = Path("data")
     DATASET_ID_DATETIME_FORMAT: str = "%Y_%m_%dT%H_%M_%SZ"
