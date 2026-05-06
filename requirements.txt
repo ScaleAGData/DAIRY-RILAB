@@ -1,0 +1,10 @@
+pandas
+xarray
+numpy
+pydantic-settings
+odc-geo
+rasterio
+python-json-logger
+zarr<3
+dask
+herbie-data
